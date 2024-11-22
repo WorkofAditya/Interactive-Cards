@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://i.ibb.co/Bq9C6W8/dfg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.music-cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    z-index: 1; 
+}
+
+.music-card {
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+    backdrop-filter: blur(8px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.flipping-container {
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+}
+
+.image-container {
+    perspective: 1000px;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.music-card:hover .cover-image {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245, 245, 245, 0.7); 
+    border-radius: 10px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.music-card:hover .card-back {
+    opacity: 1;
+    visibility: visible;
+}
+
+.song-title, .artist-name {
+    margin-top: 10px;
+    color: #333;
+}
+
+.play-button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.play-button:hover {
+    background-color: #e03e00;
+}
+
+.progress-bar-container {
+    width: 80%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #ff4500;
+    width: 0%;
+    transition: width 0.1s linear;
+}
