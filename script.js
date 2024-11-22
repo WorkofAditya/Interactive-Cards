@@ -2,7 +2,6 @@ document.querySelectorAll('.music-card').forEach((card, index) => {
     const playButton = card.querySelector('.play-button');
     const progressBar = card.querySelector('.progress-bar');
     
-    
     const audio = new Audio();
     audio.src = index === 0 ? "https://audio.jukehost.co.uk/C3c0GJ1tzShmS3fH1DnF9acpXGXa8DHt"
                : index === 1 ? "https://audio.jukehost.co.uk/RAnMJI8e8dq7XzShoreYz8CxJijpq3Ib"
