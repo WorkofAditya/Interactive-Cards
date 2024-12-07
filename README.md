@@ -1,1 +1,1 @@
-![image](https://github.com/user-attachments/assets/39202039-dd7c-4407-a617-c53593f79bdf)
+![mockup](https://github.com/user-attachments/assets/84dd77b6-d157-46b6-824f-bf4fd48ae6ae)
