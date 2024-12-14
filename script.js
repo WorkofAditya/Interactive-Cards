@@ -3,10 +3,10 @@ document.querySelectorAll('.music-card').forEach((card, index) => {
     const progressBar = card.querySelector('.progress-bar');
     
     const audio = new Audio();
-    audio.src = index === 0 ? "https://audio.jukehost.co.uk/C3c0GJ1tzShmS3fH1DnF9acpXGXa8DHt"
-               : index === 1 ? "https://audio.jukehost.co.uk/RAnMJI8e8dq7XzShoreYz8CxJijpq3Ib"
-               : index === 2 ? "https://audio.jukehost.co.uk/DSR8bVFx3dST8nw8nUdFuefFyZon1vZ8"
-               : "https://audio.jukehost.co.uk/qNGtTnPxKYKWRFAeyNXZCDEi8fj58toY"; 
+    audio.src = index === 0 ? "mp3/husn.mp3"
+               : index === 1 ? "mp3/no-surprises.mp3"
+               : index === 2 ? "mp3/one-love.mp3"
+               : "mp3/tu-hain-kahan.mp3"; 
     let isPlaying = false;
 
     playButton.addEventListener('click', () => {
