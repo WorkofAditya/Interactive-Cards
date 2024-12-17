@@ -1,5 +1,5 @@
 # Interactive-Cards
-# Hosting
+## Hosting
  This Project is live at [Github.io](https://adityasinh-sodha.github.io/Interactive-Cards/) and [Codepen.io](https://codepen.io/Adityasinh-Sodha/full/zYgyENz)
 
 ---
