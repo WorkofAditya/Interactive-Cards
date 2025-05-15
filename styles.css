@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('assets/background.jpg');
+    background-image: url('https://workofaditya.github.io/Interactive-Cards/assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
@@ -23,63 +23,6 @@ body {
     position: relative;
     z-index: 1; 
 }
-
-
-/* Top Toolbar Styles */
-.top-toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.toolbar-left {
-    display: flex;
-    align-items: center;
-}
-
-.toolbar-center {
-    position: absolute;
-    left: 50%; 
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px; 
-}
-
-.toolbar-logo {
-    height: 30px; 
-    width: auto; 
-    margin: 0 5px; 
-    cursor: pointer;
-}
-
-
-.toolbar-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: 10px;
-}
-
-.toolbar-link:hover {
-    text-decoration: underline;
-}
-
-
-body {
-    padding-top: 60px;
-}
-
-
 
 .music-card {
     background-color: rgba(255, 255, 255, 0.6); 
